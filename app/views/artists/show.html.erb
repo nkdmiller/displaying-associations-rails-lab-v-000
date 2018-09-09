@@ -1,0 +1,4 @@
+<h1><%=@artist.title%></h1>
+<%@artist.songs.all.each do |song|%>
+<%= song.title %>
+<%end%>
