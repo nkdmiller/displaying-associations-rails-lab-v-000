@@ -1,4 +1,4 @@
 <%@artists.each do |artist|%>
-<%=artist.title%>
+<%=artist.name%>
 <%= link_to "#{artist.name}", artist_path(artist)%>
 <%end%>
