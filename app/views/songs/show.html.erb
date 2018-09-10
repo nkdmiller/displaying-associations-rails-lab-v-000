@@ -1,0 +1,4 @@
+<h1><%=@song.title%></h1>
+<%@artist = Artist.find(@song.artist_id)%>
+<h1><%=@artist.name%></h1>
+<li><%= link_to "#{@artist.name}", artist_path(@artist)%></li>
